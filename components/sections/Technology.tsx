@@ -15,12 +15,12 @@ export function Technology() {
             <MaskedHeading as="h2" id="tech-heading" lines={["Translation built", "for the moment."]} className="t-display mt-6" />
           </div>
           <p className="t-lead col-span-4 max-w-[40ch] md:col-span-5 md:col-start-8" data-reveal>
-            Engineered for live speech — interruptions, accents, several people talking — not for text pasted into a box.
+            Engineered for live speech: interruptions, accents, several people talking, not for text pasted into a box.
           </p>
         </div>
 
         <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mt-16 lg:grid-cols-3">
-          <Feature i={0} title="Real-time translation" copy="Speech is processed and translated while the conversation is happening — a few seconds behind the speaker.">
+          <Feature i={0} title="Real-time translation" copy="Speech is processed and translated while the conversation is happening, a few seconds behind the speaker.">
             <div className="flex flex-col gap-2">
               <Line label="EN" text="Welcome, everyone." />
               <Line label="AR" text="مرحباً بالجميع." cls="lang-ar" />
@@ -47,7 +47,7 @@ export function Technology() {
               ))}
             </ul>
           </Feature>
-          <Feature i={2} title="AI voice" copy="A natural spoken voice in each language, alongside readable subtitles — not robotic translated text.">
+          <Feature i={2} title="AI voice" copy="A natural spoken voice in each language, alongside readable subtitles, not robotic translated text.">
             <div className="flex items-center justify-between rounded-md border border-line bg-surface px-3 py-2.5">
               <span className="flex items-end gap-[2px]" aria-hidden>
                 {[4, 10, 6, 14, 8, 12, 5, 9, 6, 11, 4].map((h, k) => (
@@ -74,7 +74,7 @@ export function Technology() {
                     <span className={cn("h-5 w-5 rounded-full", on ? "bg-brand" : "bg-line")} />
                     <span className={on ? "text-primary" : "text-secondary"}>{n as string}</span>
                   </span>
-                  <span className={cn("text-[10px] uppercase tracking-[0.12em]", on ? "text-brand-text" : "text-tertiary")}>{on ? "Speaking" : "—"}</span>
+                  <span className={cn("text-[10px] uppercase tracking-[0.12em]", on ? "text-brand-text" : "text-tertiary")}>{on ? "Speaking" : "Idle"}</span>
                 </div>
               ))}
             </div>

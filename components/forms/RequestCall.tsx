@@ -101,7 +101,7 @@ export function RequestCall({
 
           {state === "sent" ? (
             <div className="mt-10 border-t border-line pt-6" role="status">
-              <p className="font-display text-[26px] leading-tight">Thank you — we&apos;ll be in touch shortly.</p>
+              <p className="font-display text-[26px] leading-tight">Thank you, we&apos;ll be in touch shortly.</p>
               <div className="mt-6">
                 <Button variant="ink" onClick={close} arrow={false}>
                   Close
@@ -137,7 +137,7 @@ export function RequestCall({
                 </Button>
                 {state === "error" && (
                   <span className="text-sm text-secondary" role="alert">
-                    Something went wrong — please email{" "}
+                    Something went wrong. Please email{" "}
                     <a href="mailto:info@vivra.ai" className="underline">
                       info@vivra.ai
                     </a>

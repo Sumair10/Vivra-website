@@ -13,7 +13,7 @@ export function Highlights() {
           <Label index="03">Why Vivra</Label>
           <MaskedHeading as="h2" id="why-heading" lines={["Built for every", "listener."]} className="t-display mt-6" />
           <p className="t-lead mt-6 max-w-[50ch]" data-reveal>
-            Vivra turns one live voice into each listener’s own language — spoken and subtitled, on the phone they already carry.
+            Vivra turns one live voice into each listener’s own language, spoken and subtitled, on the phone they already carry.
           </p>
         </div>
 

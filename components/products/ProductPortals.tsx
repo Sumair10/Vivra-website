@@ -42,7 +42,7 @@ export function ProductPortals() {
   return (
     <section id="products" className="scroll-mt-20 pb-6 md:pb-10" aria-labelledby="ecosystem-heading">
       <h2 id="ecosystem-heading" className="sr-only">
-        The Vivra ecosystem — Vivra Mosque and Vivra Events
+        The Vivra ecosystem: Vivra Mosque and Vivra Events
       </h2>
       <div className="container-v">
         <div className="mb-4 flex items-center justify-between md:mb-5">
@@ -90,7 +90,7 @@ export function ProductPortals() {
                 {/* stretched link: the whole panel goes to the product page */}
                 <TransitionLink
                   href={p.href}
-                  aria-label={`${p.cta} — ${p.name}`}
+                  aria-label={`${p.cta}: ${p.name}`}
                   onFocus={() => setHover(p.key)}
                   onBlur={() => setHover(null)}
                   className="absolute inset-0 z-[1]"

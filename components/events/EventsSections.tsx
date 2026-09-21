@@ -25,7 +25,7 @@ export function EventFlow() {
               <span className="t-label absolute left-3 top-3 !text-white/90">Stage / Input</span>
             </div>
           </FlowCard>
-          <FlowCard n={2} title="Understood and translated, live." copy="Each sentence is translated as it is spoken — a few seconds behind, like a human interpreter." i={1}>
+          <FlowCard n={2} title="Understood and translated, live." copy="Each sentence is translated as it is spoken, a few seconds behind, like a human interpreter." i={1}>
             <div className="flex h-full min-h-[150px] flex-col items-center justify-center gap-4">
               <span className="flex items-end gap-[3px]">
                 {[5, 11, 7, 14, 6, 12, 5, 10, 7, 13, 5].map((h, k) => (
@@ -120,7 +120,7 @@ export function SpeakerSetups() {
     {
       t: "Moderator control",
       s: "One console. You decide who is on air.",
-      d: "Sound comes into one laptop near the desk — a microphone, the mixer, a browser tab or a video. When a new person starts talking, the moderator taps their name and the translation follows.",
+      d: "Sound comes into one laptop near the desk: a microphone, the mixer, a browser tab or a video. When a new person starts talking, the moderator taps their name and the translation follows.",
       best: "Keynotes, moderated sessions, streamed video",
       img: IMG.eventsModeModerator,
     },

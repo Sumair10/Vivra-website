@@ -8,7 +8,7 @@ import { PRODUCTS, SITE } from "@/lib/constants/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Vivra builds real-time AI translation for live human communication — in mosques, at events, in conferences and meetings.",
+  description: "Vivra builds real-time AI translation for live human communication, in mosques, at events, in conferences and meetings.",
   alternates: { canonical: "/about" },
 };
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
             </div>
             <div className="col-span-4 flex flex-col justify-end border-t border-line py-10 md:col-span-5 md:border-l md:border-t-0 md:py-20 md:pl-12 lg:py-24">
               <p className="t-lead max-w-[38ch]" data-reveal>
-                Vivra is a Dubai-based technology company building real-time AI translation for the moments when people gather to listen —
+                Vivra is a Dubai-based technology company building real-time AI translation for the moments when people gather to listen:
                 a khutbah, a keynote, a panel, a meeting.
               </p>
             </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
               <div className="flex flex-col gap-6 text-[15px] leading-relaxed text-secondary" data-reveal>
                 <p>
                   We started with a simple observation: in most rooms where someone speaks, not everyone understands. The equipment that used to
-                  solve this — booths, interpreters, headsets — belongs to a very small number of very large events.
+                  solve this (booths, interpreters, headsets) belongs to a very small number of very large events.
                 </p>
                 <p>
                   Vivra puts live translation on the phone every listener already carries. A speaker speaks naturally; the audience hears a

@@ -71,7 +71,7 @@ export function MosqueHero() {
                     quietly.
                   </p>
                   <p className="mt-5 max-w-[42ch] text-[13.5px] leading-snug text-secondary">
-                    Real-time AI translation reaches each worshipper privately, on the phone in their hand — while the imam speaks exactly as he always
+                    Real-time AI translation reaches each worshipper privately, on the phone in their hand, while the imam speaks exactly as he always
                     has.
                   </p>
                   <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -134,7 +134,7 @@ function HeroPhoto({ src, alt, sizes, title, text, className }: { src: string; a
 export function MosqueStory() {
   const rows = [
     { n: "01", t: "The imam speaks.", d: "Exactly as he always has, into the microphone already on the minbar. Nothing is added to the room and nothing is asked of him.", img: IMG.mosqueMicrophone },
-    { n: "02", t: "Vivra listens.", d: "The audio is followed sentence by sentence and translated into every language the mosque has opened — in a natural voice, with subtitles.", img: IMG.mosqueArches },
+    { n: "02", t: "Vivra listens.", d: "The audio is followed sentence by sentence and translated into every language the mosque has opened, in a natural voice, with subtitles.", img: IMG.mosqueArches },
     { n: "03", t: "Every worshipper understands.", d: "Each person hears the khutbah in the language they chose, privately, through earphones. No one else in the row is disturbed.", img: IMG.mosqueHands },
   ];
   return (
@@ -196,7 +196,7 @@ function QrCard() {
 
 export function MosqueAccess() {
   const steps = [
-    { w: "Scan", d: "The mosque's QR code — on a sign, a screen or a card at the door." },
+    { w: "Scan", d: "The mosque's QR code: on a sign, a screen or a card at the door." },
     { w: "Choose", d: "The language you understand best. Change it whenever you like." },
     { w: "Listen", d: "Quietly, through earphones, with the words on screen if you want them." },
   ];
@@ -226,7 +226,7 @@ export function MosqueAccess() {
           </ol>
           <p className="border-t border-line pt-5 text-[13px] leading-snug text-secondary">
             <span className="t-label mr-2">For the mosque</span>
-            Set it up once, choose the languages, share the link — and start when the khutbah begins.
+            Set it up once, choose the languages, share the link, and start when the khutbah begins.
           </p>
         </div>
       </div>
@@ -266,7 +266,7 @@ export function MosqueLanguages() {
             Listen in your <span className="text-brand-text">own language</span> with cultural precision
           </h2>
           <p className="t-lead mt-6 max-w-[42ch]" data-reveal>
-            Experience the khutbah in the language you understand best — with natural fluency, beyond word-for-word translation. Every language the
+            Experience the khutbah in the language you understand best, with natural fluency, beyond word-for-word translation. Every language the
             mosque opens is available at every sermon.
           </p>
         </div>
@@ -313,7 +313,7 @@ export function MosqueCapabilities() {
             <MaskedHeading as="h2" id="caps-heading" lines={["Made for the mosque,", "not adapted to it."]} className="t-display mt-6" />
           </div>
           <p className="t-lead lg:col-span-4 lg:col-start-9" data-reveal>
-            Everything a congregation needs to follow the message — and nothing that gets in the way of it.
+            Everything a congregation needs to follow the message, and nothing that gets in the way of it.
           </p>
         </div>
 
@@ -324,7 +324,7 @@ export function MosqueCapabilities() {
             <span aria-hidden className="absolute inset-0 -z-[5] bg-gradient-to-t from-[#052e25]/90 via-[#052e25]/15 to-transparent" />
             <span className="t-label !text-white/70">Live</span>
             <h3 className="font-display mt-3 text-[clamp(1.9rem,3vw,2.75rem)] leading-[1] text-white">Live sermon translation</h3>
-            <p className="mt-3 max-w-[36ch] text-[14px] leading-snug text-white/80">Friday khutbahs, lectures and announcements — translated in real time, a few seconds behind the imam.</p>
+            <p className="mt-3 max-w-[36ch] text-[14px] leading-snug text-white/80">Friday khutbahs, lectures and announcements, translated in real time, a few seconds behind the imam.</p>
           </div>
 
           {[
@@ -372,7 +372,7 @@ export function MosquePhotograph() {
           <div className="col-span-4 md:col-span-8 md:col-start-5">
             <MaskedHeading as="p" lines={["Technology that", "stays out of the way."]} className="t-display text-white" />
             <p className="mt-6 max-w-[44ch] text-[17px] leading-snug text-white/75" data-reveal>
-              No screens on the walls, no headsets to hand out. The sermon sounds exactly as it does today — and is understood by more of the
+              No screens on the walls, no headsets to hand out. The sermon sounds exactly as it does today, and is understood by more of the
               people in the room.
             </p>
           </div>

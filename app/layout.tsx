@@ -14,22 +14,22 @@ const devanagari = Noto_Sans_Devanagari({ subsets: ["devanagari"], variable: "--
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: "Vivra — Real-Time AI Translation", template: "%s — Vivra" },
+  title: { default: "Vivra | Real-Time AI Translation", template: "%s | Vivra" },
   description:
-    "Vivra translates live speech into multiple languages in real time — connecting audiences across mosques, events, conferences and conversations.",
+    "Vivra translates live speech into multiple languages in real time, connecting audiences across mosques, events, conferences and conversations.",
   applicationName: "Vivra",
   openGraph: {
     type: "website",
     siteName: "Vivra",
     locale: "en_US",
     url: SITE.url,
-    title: "Vivra — Real-Time AI Translation",
+    title: "Vivra | Real-Time AI Translation",
     description: "Live speech, understood in every language. AI-powered real-time translation for mosques, events and conferences.",
-    images: [{ url: "/og/vivra.png", width: 1200, height: 630, alt: "Vivra — Real-Time AI Translation" }],
+    images: [{ url: "/og/vivra.png", width: 1200, height: 630, alt: "Vivra | Real-Time AI Translation" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vivra — Real-Time AI Translation",
+    title: "Vivra | Real-Time AI Translation",
     description: "Live speech, understood in every language.",
     images: ["/og/vivra.png"],
   },

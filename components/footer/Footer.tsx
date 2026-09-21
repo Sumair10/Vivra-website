@@ -27,7 +27,7 @@ export function Footer() {
       <div className="container-v">
         <div className="grid grid-cols-4 gap-y-12 border-b border-line py-16 md:grid-cols-12 md:py-24">
           <div className="col-span-4 md:col-span-5">
-            <span className="t-label">{brand === "vivra" ? "Vivra Technology" : `Vivra ${brand} — a Vivra technology`}</span>
+            <span className="t-label">{brand === "vivra" ? "Vivra Technology" : `Vivra ${brand}, a Vivra technology`}</span>
             <p className="font-display mt-6 max-w-[14ch] text-[clamp(1.75rem,3vw,2.75rem)] text-white">
               Real-time intelligence for human communication.
             </p>

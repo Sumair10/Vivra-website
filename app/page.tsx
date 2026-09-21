@@ -10,7 +10,7 @@ import { ClosingBand } from "@/components/sections/ClosingBand";
 import { SITE } from "@/lib/constants/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Vivra — Real-Time AI Translation" },
+  title: { absolute: "Vivra | Real-Time AI Translation" },
   alternates: { canonical: "/" },
 };
 

@@ -84,7 +84,7 @@ export function AudioFlow() {
             </Label>
             <MaskedHeading as="h2" id="flow-heading" lines={["Plug in the room.", "Vivra does the rest."]} className="t-display mt-6 text-white" />
             <p className="mt-6 max-w-[52ch] text-[clamp(1rem,1.3vw,1.2rem)] leading-snug text-white/75" data-reveal>
-              Connect a microphone, the mixer or a browser tab — and every listener hears the speaker in their own language, seconds later.
+              Connect a microphone, the mixer or a browser tab, and every listener hears the speaker in their own language, seconds later.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ export function AudioFlow() {
                 </span>
                 <h3 className="font-display mt-4 text-[clamp(1.4rem,2.2vw,2rem)] leading-tight text-white [overflow-wrap:anywhere]">Every listener, in their own language.</h3>
                 <p className="mt-2 max-w-[46ch] text-[14px] leading-snug text-white/70">
-                  Vivra follows the speaker sentence by sentence and delivers natural voice and readable subtitles — as it is spoken.
+                  Vivra follows the speaker sentence by sentence and delivers natural voice and readable subtitles, as it is spoken.
                 </p>
 
                 <div className="mt-5 grid gap-2 border-t border-white/10 pt-4 text-[13px]">

@@ -42,7 +42,7 @@ export function EventsHero() {
                     </span>
                   </span>
                   <span className="line-mask" style={{ "--i": 1 } as React.CSSProperties}>
-                    <span>for Every Attendee —</span>
+                    <span>for Every Attendee,</span>
                   </span>
                   <span className="line-mask" style={{ "--i": 2 } as React.CSSProperties}>
                     <span>
@@ -70,7 +70,7 @@ export function EventsHero() {
 
               <div data-reveal style={{ "--reveal-delay": "550ms" } as React.CSSProperties}>
                 <p className="max-w-[46ch] text-[14px] leading-snug text-secondary">
-                  Real-time AI translation for conferences, events, panels and live presentations. Everyone in the room hears the same moment —
+                  Real-time AI translation for conferences, events, panels and live presentations. Everyone in the room hears the same moment,
                   in their own language, on their own phone.
                 </p>
                 <ul className="font-display mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[17px] tracking-[-0.02em] text-tertiary" aria-label="Where Vivra Events is used">

@@ -52,7 +52,7 @@ export async function POST(req: Request) {
     try {
       const port = Number(SMTP_PORT ?? 465);
       const transporter = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASS } });
-      const label = isCall ? "Call request" : `Demo request — ${payload.product}`;
+      const label = isCall ? "Call request" : `Demo request: ${payload.product}`;
       await transporter.sendMail({
         from: `"Vivra website" <${SMTP_USER}>`,
         to: MAIL_TO || SMTP_USER,
@@ -75,7 +75,7 @@ export async function POST(req: Request) {
       const res = await fetch(webhook, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(webhook.includes("hooks.slack.com") ? { text: toText(payload, `New request — ${payload.product}`) } : payload),
+        body: JSON.stringify(webhook.includes("hooks.slack.com") ? { text: toText(payload, `New request: ${payload.product}`) } : payload),
       });
       if (res.ok) delivered = true;
     } catch (err) {

@@ -85,7 +85,7 @@ export function LanguageOrbit() {
           <Label index="05">Languages</Label>
           <MaskedHeading as="h2" id="orbit-heading" lines={["Every language", "in the room."]} className="t-display mt-6" />
           <p className="t-lead mt-6 max-w-[46ch]" data-reveal>
-            From English to Arabic, French to Spanish, Urdu and Hindi — Vivra turns one live voice into the languages your audience actually speaks.
+            From English to Arabic, French to Spanish, Urdu and Hindi. Vivra turns one live voice into the languages your audience actually speaks.
           </p>
 
           {/* compact layout: flags as a wrapped row */}

@@ -21,7 +21,7 @@ export function VivraHero() {
             <span aria-hidden className="hero-rule absolute inset-x-0 -bottom-6" style={{ animationDelay: "-2.7s" }} />
           </div>
           <p className="t-lead mt-14 max-w-[52ch]" data-reveal style={{ "--reveal-delay": "500ms" } as React.CSSProperties}>
-            Vivra translates live speech into multiple languages in real time — connecting audiences across mosques, events, conferences
+            Vivra translates live speech into multiple languages in real time, connecting audiences across mosques, events, conferences
             and conversations.
           </p>
         </div>

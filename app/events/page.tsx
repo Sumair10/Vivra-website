@@ -5,17 +5,17 @@ import { DemoSection } from "@/components/sections/DemoSection";
 import { SITE } from "@/lib/constants/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Vivra Events — Live AI Translation for Conferences & Events" },
+  title: { absolute: "Vivra Events | Live AI Translation for Conferences & Events" },
   description:
-    "Real-time AI translation for conferences, panels, meetings and live presentations. Guests listen in their own language on their own phone — no app, no headsets, no booths.",
+    "Real-time AI translation for conferences, panels, meetings and live presentations. Guests listen in their own language on their own phone, no app, no headsets, no booths.",
   alternates: { canonical: "/events" },
   openGraph: {
-    title: "Vivra Events — One stage. Every language.",
+    title: "Vivra Events | One stage. Every language.",
     description: "Real-time AI translation for conferences, events, panels and live presentations.",
     url: `${SITE.url}/events`,
     images: [{ url: "/og/events.png", width: 1200, height: 630, alt: "Vivra Events" }],
   },
-  twitter: { card: "summary_large_image", title: "Vivra Events — One stage. Every language.", images: ["/og/events.png"] },
+  twitter: { card: "summary_large_image", title: "Vivra Events | One stage. Every language.", images: ["/og/events.png"] },
 };
 
 const jsonLd = {

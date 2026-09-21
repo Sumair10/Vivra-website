@@ -8,7 +8,7 @@ import { ParticleSphere } from "@/components/hero/ParticleSphere";
  */
 export function VivraHero() {
   return (
-    <section className="hero-bg relative overflow-hidden pt-16 md:pt-[76px]" aria-labelledby="hero-heading">
+    <section className="hero-bg relative overflow-hidden pt-[72px] md:pt-[100px]" aria-labelledby="hero-heading">
       <ParticleSphere className="pointer-events-none absolute left-1/2 top-[10%] h-[80%] w-[110vw] -translate-x-1/2 opacity-90 md:top-[4%] md:h-[96%] md:w-[min(1180px,150vw)]" />
       <div className="container-v relative">
         <div className="flex flex-col items-center pb-12 pt-16 text-center md:pb-14 md:pt-24 lg:pt-28">

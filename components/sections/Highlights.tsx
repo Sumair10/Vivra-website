@@ -11,9 +11,9 @@ export function Highlights() {
       <div className="container-v">
         <div className="flex flex-col items-center text-center">
           <Label index="03">Why Vivra</Label>
-          <MaskedHeading as="h2" id="why-heading" lines={["Built for how", "people listen."]} className="t-display mt-6" />
+          <MaskedHeading as="h2" id="why-heading" lines={["Built for every", "listener."]} className="t-display mt-6" />
           <p className="t-lead mt-6 max-w-[50ch]" data-reveal>
-            Vivra turns one live voice into every language in the room — spoken and subtitled, on the phone each listener already carries.
+            Vivra turns one live voice into each listener’s own language — spoken and subtitled, on the phone they already carry.
           </p>
         </div>
 

@@ -90,11 +90,11 @@ export function Nav() {
             : "border-b border-transparent",
         )}
       >
-        <div className="container-v flex h-16 items-center justify-between md:h-[76px]">
+        <div className="container-v flex h-[72px] items-center justify-between md:h-[100px]">
           {/* left: logo + relationship line */}
           <div className="flex items-center gap-4">
             <TransitionLink href={brand === "vivra" ? "/" : `/${brand}`} aria-label={`${brand === "vivra" ? "Vivra" : `Vivra ${brand}`} home`} className="flex items-center">
-              <BrandLogo brand={brand} height={44} priority className="translate-y-[1px] max-md:!h-9" />
+              <BrandLogo brand={brand} height={84} priority className="translate-y-[1px] max-md:!h-[56px]" />
             </TransitionLink>
             {brand !== "vivra" && (
               <TransitionLink href="/" className="t-label hidden items-center gap-2 border-l border-line pl-4 text-tertiary transition-colors hover:text-primary lg:inline-flex">
@@ -190,7 +190,7 @@ export function Nav() {
         id="mobile-menu"
         aria-hidden={!open}
         className={cn(
-          "fixed inset-0 z-40 flex flex-col bg-background pt-16 transition-[clip-path] duration-600 ease-[cubic-bezier(0.76,0,0.24,1)] lg:hidden",
+          "fixed inset-0 z-40 flex flex-col bg-background pt-[72px] transition-[clip-path] duration-600 ease-[cubic-bezier(0.76,0,0.24,1)] lg:hidden",
           open ? "[clip-path:inset(0_0_0_0)]" : "pointer-events-none [clip-path:inset(0_0_100%_0)]",
         )}
       >

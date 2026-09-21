@@ -33,22 +33,23 @@ export function EventsHero() {
                 <Label index="01" brand>
                   Vivra Events
                 </Label>
-                <h1 id="hero-heading" className="font-display t-events-h1 mt-7">
+                <p className="mt-3 text-[15px] italic text-secondary">Events that speak your language.</p>
+                <h1 id="hero-heading" className="font-display mt-6 text-[clamp(2.2rem,4.4vw,4.5rem)] leading-[1.02] tracking-[-0.04em]">
                   <span className="line-mask" style={{ "--i": 0 } as React.CSSProperties}>
                     <span>
                       <span aria-hidden className="stripe-chip mr-[0.22em] inline-block h-[0.6em] w-[1.35em] rounded-full align-[0.02em]" />
-                      One stage.
+                      Live AI Translation
                     </span>
                   </span>
                   <span className="line-mask" style={{ "--i": 1 } as React.CSSProperties}>
-                    <span>Every language,</span>
+                    <span>for Every Attendee —</span>
                   </span>
                   <span className="line-mask" style={{ "--i": 2 } as React.CSSProperties}>
                     <span>
-                      heard live.
+                      Directly on Their Phone.
                       <TransitionLink
                         href="/events#how"
-                        className="ml-3 inline-flex translate-y-[-0.25em] items-center gap-2 rounded-full border border-line-strong px-3.5 py-2 align-middle font-sans text-[13px] font-medium leading-none tracking-normal text-primary transition-colors hover:border-brand hover:text-brand-text"
+                        className="ml-3 inline-flex translate-y-[-0.2em] items-center gap-2 rounded-full border border-line-strong px-3.5 py-2 align-middle font-sans text-[13px] font-medium leading-none tracking-normal text-primary transition-colors hover:border-brand hover:text-brand-text"
                       >
                         <svg viewBox="0 0 10 10" className="h-2.5 w-2.5" aria-hidden>
                           <path d="M2 1.2 L8.4 5 L2 8.8 Z" fill="currentColor" />
@@ -91,7 +92,7 @@ export function EventsHero() {
                 <span aria-hidden className="absolute inset-0 -z-[5] bg-gradient-to-b from-[#062a2e]/65 via-[#062a2e]/5 to-[#062a2e]/70" />
                 <h2 className="font-display max-w-[16ch] text-[clamp(1.35rem,2.1vw,1.9rem)] leading-[1.05] text-white">Make your next event understood by everyone.</h2>
                 <div className="flex items-end justify-between gap-4">
-                  <p className="max-w-[30ch] text-[12px] leading-snug text-white/80">No booths and no headsets — guests scan a code and listen in their own language.</p>
+                  <p className="max-w-[30ch] text-[12px] leading-snug text-white/80">Guests scan a code and follow along in their own language.</p>
                   <RoundArrow />
                 </div>
               </TransitionLink>

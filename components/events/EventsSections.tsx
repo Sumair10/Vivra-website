@@ -11,7 +11,7 @@ export function EventFlow() {
     <section id="how" className="tone-surface scroll-mt-20 rule-b py-16 md:py-24" aria-labelledby="how-heading">
       <div className="container-v">
         <div className="flex flex-col items-center text-center">
-          <Label index="02">The event experience</Label>
+          <Label index="03">How it works</Label>
           <MaskedHeading as="h2" id="how-heading" lines={["From the stage", "to every seat."]} className="t-display mt-6" />
           <p className="t-lead mt-6 max-w-[46ch]" data-reveal>
             The speaker changes nothing. Everyone in the room hears the same moment, in the language they chose.
@@ -56,7 +56,7 @@ export function EventFlow() {
               ))}
             </ul>
           </FlowCard>
-          <FlowCard n={4} title="Heard on every phone." copy="A natural voice through earphones, with subtitles on screen. No app, no headset, no booth." i={3}>
+          <FlowCard n={4} title="Heard on every phone." copy="A natural voice through earphones, with subtitles on screen." i={3}>
             <div className="flex items-end justify-center gap-3">
               <PhoneMock language="English" text="Welcome, everyone." className="!w-[104px]" />
               <PhoneMock language="العربية" text="أهلاً بكم جميعاً." cls="lang-ar" className="!w-[104px] -translate-y-3" />
@@ -80,61 +80,6 @@ function FlowCard({ n, i, title, copy, children }: { n: number; i: number; title
         <p className="t-body mt-2.5 max-w-[40ch]">{copy}</p>
       </div>
     </li>
-  );
-}
-
-/* 03 — listener access: one framed panel, title block + white cards + image cards ---- */
-export function ListenerJourney() {
-  const guest = [
-    { t: "Scan the code", d: "On the screen, the chair or the invitation." },
-    { t: "Pick a language", d: "Any open language. Switch at any time." },
-    { t: "Listen", d: "Natural voice with subtitles, seconds behind." },
-  ];
-  const organiser = [
-    { t: "Set up the event", d: "Add speakers and languages. Get a code and QR." },
-    { t: "Show the code", d: "Big screen, the door, or every chair." },
-    { t: "Go live", d: "Any laptop near the sound desk. One button." },
-  ];
-  return (
-    <section id="access" className="tone-soft scroll-mt-20 rule-b py-12 md:py-20" aria-labelledby="access-heading">
-      <div className="container-v">
-        <div className="access-panel rounded-[28px] border border-line p-3 md:p-4">
-          <div className="grid grid-cols-1 gap-3 md:gap-4 lg:grid-cols-12">
-            {/* title block */}
-            <div className="flex flex-col justify-between gap-10 p-4 md:p-8 lg:col-span-6">
-              <Label index="03">Listener access</Label>
-              <div>
-                <MaskedHeading as="h2" id="access-heading" lines={["Ten seconds", "for a guest."]} className="t-display" />
-                <p className="t-lead mt-6 max-w-[40ch]" data-reveal>
-                  Nothing to download on either side. Two minutes for you, ten seconds for everyone else.
-                </p>
-              </div>
-            </div>
-
-            <AccessCard title="For guests" note="About ten seconds" steps={guest} className="lg:col-span-3" />
-            <AccessCard title="For organisers" note="About two minutes, once" steps={organiser} className="lg:col-span-3" />
-
-            {/* image cards */}
-            <PhotoCard
-              className="aspect-[16/10] lg:col-span-8 lg:aspect-auto lg:min-h-[340px]"
-              src={IMG.eventsConfHall.src}
-              alt={IMG.eventsConfHall.alt}
-              sizes="(min-width:1024px) 60vw, 92vw"
-              title="Show the code on the big screen."
-              caption="Guests point their camera at it and they're in. No booth, no headsets to hand out."
-            />
-            <PhotoCard
-              className="aspect-[4/5] sm:aspect-[16/10] lg:col-span-4 lg:aspect-auto"
-              src={IMG.eventsListener.src}
-              alt={IMG.eventsListener.alt}
-              sizes="(min-width:1024px) 30vw, 92vw"
-              title="Listen in your own language."
-              caption="Voice and subtitles on the phone in their pocket."
-            />
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -198,7 +143,7 @@ export function SpeakerSetups() {
     <section id="speakers" className="scroll-mt-20 rule-b py-16 md:py-24" aria-labelledby="speakers-heading">
       <div className="container-v">
         <div className="flex flex-col items-center text-center">
-          <Label index="04">Multiple speakers</Label>
+          <Label index="05">Multiple speakers</Label>
           <MaskedHeading as="h2" id="speakers-heading" lines={["One microphone, a full panel,", "or something in between."]} className="t-display mt-6" />
           <p className="t-lead mt-6 max-w-[46ch]" data-reveal>
             Three ways to bring speakers in. Choose per event, and switch while live.
@@ -235,43 +180,96 @@ export function SpeakerSetups() {
   );
 }
 
-/* 05 — event scale (dark) ----------------------------------------------- */
-export function EventScale() {
-  const points = [
-    { t: "No booths, no headsets", d: "The room stays as it is. Guests point their camera at a code and put their earphones in." },
-    { t: "One laptop, one microphone", d: "Or the room's sound desk. Run it from any laptop near the sound engineer." },
-    { t: "Every language, every event", d: "Open all of them. Guests hear each speaker, in order, with their name." },
-    { t: "Any audience size", d: "Guests listen on the phone in their pocket, so the room can be as large as the venue." },
+/* 02 — Built for Live Events: the facts an organiser decides on ---------------- */
+export function LiveEventFacts() {
+  const facts = [
+    { k: "Languages", v: "80", n: "Speak in any, listen in any. Every language open at every event." },
+    { k: "Translation delay", v: "A few seconds", n: "Behind the speaker, like a human interpreter." },
+    { k: "Simultaneous attendees", v: "5,000+", n: "At once, from one laptop and one microphone or the room's sound desk." },
+    { k: "Captions & audio", v: "Both", n: "A natural voice through earphones, with subtitles on screen." },
+    { k: "Access", v: "QR code", n: "Or a short code. No app to install, no account to create." },
+    { k: "Devices", v: "Any phone", n: "iPhone or Android, in the browser they already use." },
+    { k: "Connectivity", v: "Internet", n: "Guests use venue Wi-Fi or mobile data. The operator laptop needs a stable connection." },
+    { k: "Data & security", v: "Not recorded", n: "Nothing is kept unless the organiser keeps the transcript. Voice samples are never stored." },
   ];
   return (
-    <section className="on-ink relative isolate overflow-hidden bg-ink" aria-labelledby="scale-heading">
-      <Image
-        src={IMG.eventsAuditorium.src}
-        alt=""
-        fill
-        sizes="100vw"
-        className="-z-10 object-cover opacity-40"
-        aria-hidden
-      />
-      <span aria-hidden className="absolute inset-0 -z-[5] bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
-      <div className="container-v grid grid-cols-4 gap-x-8 py-20 md:grid-cols-12 md:py-32">
-        <div className="col-span-4 md:col-span-5">
-          <Label index="05" className="[&_span]:text-white/60">
-            Event scale
-          </Label>
-          <MaskedHeading as="h2" id="scale-heading" lines={["Built for the room,", "whatever its size."]} className="t-display mt-6 text-white" />
+    <section id="facts" className="tone-surface scroll-mt-20 rule-b py-16 md:py-24" aria-labelledby="facts-heading">
+      <div className="container-v">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-7">
+            <Label index="02">The facts</Label>
+            <MaskedHeading as="h2" id="facts-heading" lines={["Built for", "Live Events."]} className="t-display mt-6" />
+          </div>
+          <p className="t-lead lg:col-span-4 lg:col-start-9" data-reveal>
+            Eight things an organiser needs to know before saying yes.
+          </p>
         </div>
-        <ul className="col-span-4 mt-12 border-t border-line md:col-span-6 md:col-start-7 md:mt-0">
-          {points.map((p, i) => (
-            <li key={p.t} className="grid grid-cols-[2.5rem_1fr] items-baseline gap-4 border-b border-line py-6" data-reveal style={{ "--reveal-delay": `${i * 80}ms` } as React.CSSProperties}>
-              <span className="t-mono text-xs text-brand-accent">0{i + 1}</span>
+        <dl className="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-16 lg:grid-cols-4">
+          {facts.map((f, i) => (
+            <div key={f.k} className="card flex flex-col justify-between gap-8 p-5 md:p-6" data-reveal style={{ "--reveal-delay": `${(i % 4) * 70}ms` } as React.CSSProperties}>
+              <dt className="t-label">{f.k}</dt>
               <div>
-                <h3 className="font-display text-[clamp(1.4rem,2.2vw,2rem)] text-white">{p.t}</h3>
-                <p className="mt-2 max-w-[44ch] text-[15px] leading-snug text-secondary">{p.d}</p>
+                <dd className="font-display text-[clamp(1.75rem,2.6vw,2.5rem)] leading-[1] text-brand-text">{f.v}</dd>
+                <p className="t-body mt-3 !text-[13.5px]">{f.n}</p>
               </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </dl>
+      </div>
+    </section>
+  );
+}
+
+/* 04 — Vivra vs traditional translation ---------------------------------------- */
+export function EventsCompare() {
+  const rows = [
+    { k: "Who translates", a: "Interpreters, usually a team per language", b: "AI live translation, no booth" },
+    { k: "Equipment", a: "Booths, consoles, receivers and headsets", b: "Attendees' own phones" },
+    { k: "Reaching guests", a: "Receivers handed out, then collected", b: "A QR code, opened in the browser" },
+    { k: "Languages", a: "Set in advance, one channel each", b: "Every language open at once" },
+    { k: "In the room", a: "Physical installation before the event", b: "One laptop near the sound desk" },
+  ];
+  return (
+    <section id="compare" className="scroll-mt-20 rule-b py-16 md:py-24" aria-labelledby="compare-heading">
+      <div className="container-v">
+        <div className="flex flex-col items-center text-center">
+          <Label index="04">The comparison</Label>
+          <MaskedHeading as="h2" id="compare-heading" lines={["Vivra vs", "traditional translation."]} className="t-display mt-6" />
+          <p className="t-lead mt-6 max-w-[48ch]" data-reveal>
+            Less to hire, ship, set up and collect. The same moment, heard in every language.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-12 max-w-[1040px] md:mt-16" data-reveal>
+          <div className="hidden grid-cols-[1fr_1.15fr_1.15fr] gap-3 px-2 pb-3 md:grid">
+            <span />
+            <span className="t-label">Traditional interpretation</span>
+            <span className="t-label !text-brand-text">Vivra Events</span>
+          </div>
+          <ul className="flex flex-col gap-3">
+            {rows.map((r) => (
+              <li key={r.k} className="grid grid-cols-1 gap-2 md:grid-cols-[1fr_1.15fr_1.15fr] md:gap-3">
+                <span className="font-display px-2 text-[20px] leading-tight md:self-center md:text-[22px]">{r.k}</span>
+                <span className="card flex items-center gap-3 !bg-surface-alt px-4 py-4 text-[14.5px] text-secondary shadow-none">
+                  <span aria-hidden className="grid h-6 w-6 shrink-0 place-items-center rounded-full border border-line-strong text-tertiary">
+                    <svg viewBox="0 0 12 12" className="h-2.5 w-2.5"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" /></svg>
+                  </span>
+                  <span><span className="t-label mr-2 md:hidden">Traditional</span>{r.a}</span>
+                </span>
+                <span className="card flex items-center gap-3 !border-brand px-4 py-4 text-[14.5px] text-primary">
+                  <span aria-hidden className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand text-white">
+                    <svg viewBox="0 0 12 12" className="h-2.5 w-2.5"><path d="M2.5 6.5l2.4 2.4 4.6-5.3" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  </span>
+                  <span><span className="t-label mr-2 !text-brand-text md:hidden">Vivra</span>{r.b}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="mx-auto mt-8 max-w-[62ch] text-center text-[13px] leading-snug text-secondary">
+            Vivra is AI translation. Professional interpreters remain the right choice for some sessions, and where certified human interpretation is
+            required the two can work side by side.
+          </p>
+        </div>
       </div>
     </section>
   );

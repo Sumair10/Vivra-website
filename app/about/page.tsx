@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="pt-16 md:pt-[72px]">
+      <section className="pt-[72px] md:pt-[100px]">
         <div className="container-v">
           <div className="grid grid-cols-4 rule-t md:grid-cols-12">
             <div className="col-span-4 py-12 md:col-span-7 md:py-20 md:pr-12 lg:py-24">
               <Label index="01" brand>
                 About Vivra
               </Label>
-              <MaskedHeading as="h1" lines={["One intelligence.", "Every language."]} className="t-hero mt-8" />
+              <MaskedHeading as="h1" lines={["One voice.", "Every language."]} className="t-hero mt-8" />
             </div>
             <div className="col-span-4 flex flex-col justify-end border-t border-line py-10 md:col-span-5 md:border-l md:border-t-0 md:py-20 md:pl-12 lg:py-24">
               <p className="t-lead max-w-[38ch]" data-reveal>

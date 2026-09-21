@@ -13,10 +13,12 @@ export function RequestCall({
   variant = "outline",
   size = "lg",
   triggerClassName,
+  label = "Request a call",
 }: {
   variant?: "ink" | "outline" | "brand" | "link";
   size?: "md" | "lg";
   triggerClassName?: string;
+  label?: string;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -68,11 +70,11 @@ export function RequestCall({
           onClick={open}
           className={cn("text-[14px] font-medium text-primary underline decoration-1 underline-offset-[6px] transition-colors hover:text-brand-text", triggerClassName)}
         >
-          Request a call
+          {label}
         </button>
       ) : (
         <Button variant={variant} size={size} onClick={open}>
-          Request a call
+          {label}
         </Button>
       )}
       <dialog

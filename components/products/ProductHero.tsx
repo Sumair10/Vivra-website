@@ -25,7 +25,7 @@ export function ProductHero({
   strip: string[];
 }) {
   return (
-    <section className="pt-16 md:pt-[72px]" aria-labelledby="hero-heading">
+    <section className="pt-[72px] md:pt-[100px]" aria-labelledby="hero-heading">
       <div className="container-v">
         <div className="grid grid-cols-4 rule-t md:grid-cols-12">
           <div className="col-span-4 py-12 md:col-span-8 md:py-20 md:pr-12 lg:py-24">

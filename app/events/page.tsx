@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { EventsHero } from "@/components/events/EventsHero";
-import { EventFlow, ListenerJourney, SpeakerSetups, EventScale } from "@/components/events/EventsSections";
+import { LiveEventFacts, EventFlow, EventsCompare, SpeakerSetups } from "@/components/events/EventsSections";
 import { DemoSection } from "@/components/sections/DemoSection";
 import { SITE } from "@/lib/constants/site";
 
@@ -33,17 +33,18 @@ export default function EventsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <EventsHero />
+      <LiveEventFacts />
       <EventFlow />
-      <ListenerJourney />
+      <EventsCompare />
       <SpeakerSetups />
-      <EventScale />
       <DemoSection
         index="06"
-        lines={["Make your next event", "understood by everyone."]}
+        lines={["Bring Live Translation", "to Your Next Event."]}
         copy="Tell us the venue, the expected audience and the languages in the room. We'll walk you through a live session and how guests join."
         product="Vivra Events"
         variant="brand"
         tone
+        actions
       />
     </>
   );

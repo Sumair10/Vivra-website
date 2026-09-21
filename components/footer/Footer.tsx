@@ -67,7 +67,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 py-6 text-[12px] text-tertiary sm:flex-row sm:items-center sm:justify-between">
           <span>© {new Date().getFullYear()} {SITE.legalName}. All rights reserved.</span>
-          <span className="t-label">One intelligence. Every language.</span>
+          <span className="t-label">One voice. Every language.</span>
         </div>
       </div>
 

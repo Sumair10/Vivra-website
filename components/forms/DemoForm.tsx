@@ -34,7 +34,7 @@ export function DemoForm({ defaultProduct = "General Vivra Inquiry", variant = "
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2" noValidate>
+    <form id="demo-form" onSubmit={onSubmit} className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2" noValidate>
       <Field label="Name" name="name" autoComplete="name" required />
       <Field label="Organization" name="organization" autoComplete="organization" />
       <Field label="Email" name="email" type="email" autoComplete="email" required />

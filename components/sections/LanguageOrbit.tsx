@@ -1,5 +1,5 @@
 import type { FlagComponent } from "country-flag-icons/react/3x2";
-import { GB, US, IT, IN, DE, FR, TR, ID, ES, CN, RU, PT, AE } from "country-flag-icons/react/3x2";
+import { GB, US, IT, IN, DE, FR, TR, ID, ES, CN, RU, PK, AE } from "country-flag-icons/react/3x2";
 import { Label, MaskedHeading } from "@/components/typography/Label";
 import { cn } from "@/lib/utils";
 
@@ -17,7 +17,7 @@ const ORBIT: { Flag: Flag; label: string; x: number; y: number; delay: number }[
   { Flag: TR, label: "Turkish", x: 73.5, y: 50, delay: 2 },
   { Flag: ID, label: "Indonesian", x: 91, y: 59, delay: 2.8 },
   { Flag: CN, label: "Chinese", x: 79.5, y: 72, delay: 3.6 },
-  { Flag: PT, label: "Portuguese", x: 17, y: 82, delay: 1.4 },
+  { Flag: PK, label: "Urdu", x: 17, y: 82, delay: 1.4 },
   { Flag: AE, label: "Arabic", x: 86, y: 80, delay: 2.2 },
 ];
 
@@ -85,7 +85,7 @@ export function LanguageOrbit() {
           <Label index="05">Languages</Label>
           <MaskedHeading as="h2" id="orbit-heading" lines={["Every language", "in the room."]} className="t-display mt-6" />
           <p className="t-lead mt-6 max-w-[46ch]" data-reveal>
-            From English to Arabic, French to Spanish, Portuguese and Hindi — Vivra turns one live voice into the languages your audience actually speaks.
+            From English to Arabic, French to Spanish, Urdu and Hindi — Vivra turns one live voice into the languages your audience actually speaks.
           </p>
 
           {/* compact layout: flags as a wrapped row */}

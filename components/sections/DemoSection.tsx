@@ -1,4 +1,6 @@
 import { DemoForm } from "@/components/forms/DemoForm";
+import { RequestCall } from "@/components/forms/RequestCall";
+import { Button } from "@/components/ui/Button";
 import { Label, MaskedHeading } from "@/components/typography/Label";
 import { SITE } from "@/lib/constants/site";
 import { cn } from "@/lib/utils";
@@ -13,6 +15,7 @@ export function DemoSection({
   product = "General Vivra Inquiry",
   variant = "ink",
   tone = false,
+  actions = false,
 }: {
   index?: string;
   lines: React.ReactNode[];
@@ -20,6 +23,7 @@ export function DemoSection({
   product?: Product;
   variant?: "ink" | "brand";
   tone?: boolean;
+  actions?: boolean;
 }) {
   return (
     <section id="demo" className={cn("scroll-mt-20 rule-t", tone && "tone-soft")} aria-labelledby="demo-heading">
@@ -30,6 +34,14 @@ export function DemoSection({
           <p className="t-lead mt-8 max-w-[38ch]" data-reveal>
             {copy}
           </p>
+          {actions && (
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4" data-reveal>
+              <Button href="#demo-form" variant="brand" size="lg" className="rounded-full">
+                Book a Demo
+              </Button>
+              <RequestCall variant="link" label="Talk to Vivra" />
+            </div>
+          )}
           <dl className="mt-12 grid grid-cols-2 gap-6 text-sm" data-reveal style={{ "--reveal-delay": "120ms" } as React.CSSProperties}>
             <div>
               <dt className="t-label">Email</dt>

@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Vivra",
   url: "https://vivra.ai",
-  email: "support@vivra.ai",
+  email: "info@vivra.ai",
   phone: "+971 50 216 4876",
   phoneHref: "tel:+971502164876",
   location: "Dubai, United Arab Emirates",

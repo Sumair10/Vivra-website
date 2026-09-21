@@ -553,3 +553,6 @@ video {
   background: var(--brand-primary);
   box-shadow: 0 0 0 4px var(--brand-soft);
 }
+
+/* the wordmark is deep indigo: show it white on dark canvases so it stays legible */
+:root[data-theme="dark"] .logo-wordmark { filter: brightness(0) invert(1); }

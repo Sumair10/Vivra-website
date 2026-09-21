@@ -94,7 +94,7 @@ export function Nav() {
           {/* left: logo + relationship line */}
           <div className="flex items-center gap-4">
             <TransitionLink href={brand === "vivra" ? "/" : `/${brand}`} aria-label={`${brand === "vivra" ? "Vivra" : `Vivra ${brand}`} home`} className="flex items-center">
-              <BrandLogo brand={brand} height={84} priority className="translate-y-[1px] max-md:!h-[56px]" />
+              <BrandLogo brand={brand} height={72} priority className="logo-wordmark translate-y-[1px] max-md:!h-[46px]" />
             </TransitionLink>
             {brand !== "vivra" && (
               <TransitionLink href="/" className="t-label hidden items-center gap-2 border-l border-line pl-4 text-tertiary transition-colors hover:text-primary lg:inline-flex">

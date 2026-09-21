@@ -60,8 +60,8 @@ export function DemoForm({ defaultProduct = "General Vivra Inquiry", variant = "
         {state === "error" && (
           <span className="text-sm text-secondary" role="alert">
             Something went wrong — email us at{" "}
-            <a href="mailto:support@vivra.ai" className="underline">
-              support@vivra.ai
+            <a href="mailto:info@vivra.ai" className="underline">
+              info@vivra.ai
             </a>
             .
           </span>

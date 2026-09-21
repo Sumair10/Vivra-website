@@ -9,7 +9,7 @@ import { brandFromPath } from "@/lib/brand";
 const COMPANY = [
   { label: "Technology", href: "/#technology" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "mailto:support@vivra.ai" },
+  { label: "Contact", href: "mailto:info@vivra.ai" },
 ];
 const LEGAL = [
   { label: "Privacy", href: "/privacy" },

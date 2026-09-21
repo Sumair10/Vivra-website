@@ -55,8 +55,6 @@ export function AnimatedHeadline() {
     return () => clearTimeout(t);
   }, [animated, phase, text, index]);
 
-  const writing = animated && (phase === "type" || phase === "erase");
-
   return (
     <h1 id="hero-heading" aria-label={FULL_LABEL} className="font-display t-headline">
       <span aria-hidden className="block">
@@ -68,15 +66,6 @@ export function AnimatedHeadline() {
         </span>
         <span className="mt-[0.06em] flex flex-col items-center justify-center gap-y-[0.02em] md:flex-row md:items-baseline md:gap-x-[0.28em]" data-reveal style={{ "--reveal-delay": "260ms" } as React.CSSProperties}>
           <span className="relative inline-block">
-            {/* pen */}
-            <svg
-              viewBox="0 0 32 32"
-              className={`pointer-events-none absolute -left-[0.62em] top-[0.28em] h-[0.44em] w-[0.44em] text-primary ${writing ? "pen-write" : ""}`}
-              aria-hidden
-            >
-              <path d="M22.5 2.5l7 7-16 16-8.5 2 2-8.5 15.5-16.5z" fill="currentColor" />
-              <path d="M2 30c3-1 5 1 8-1s5-2 8 0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-            </svg>
             <span
               className="relative inline-flex min-h-[1.12em] min-w-[0.36em] items-center border-l-[0.06em] border-brand bg-brand-soft px-[0.14em] text-brand-text"
               style={{ transition: "background-color 400ms" }}

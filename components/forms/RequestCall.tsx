@@ -138,8 +138,8 @@ export function RequestCall({
                 {state === "error" && (
                   <span className="text-sm text-secondary" role="alert">
                     Something went wrong — please email{" "}
-                    <a href="mailto:support@vivra.ai" className="underline">
-                      support@vivra.ai
+                    <a href="mailto:info@vivra.ai" className="underline">
+                      info@vivra.ai
                     </a>
                     .
                   </span>

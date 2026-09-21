@@ -7,9 +7,9 @@ export const BRAND_COLORS: Record<Brand, string> = {
 };
 
 export const BRAND_LOGOS: Record<Brand, { src: string; alt: string; width: number; height: number }> = {
-  vivra: { src: "/brand/vivra-technology.png", alt: "Vivra Technology", width: 2170, height: 1533 },
-  events: { src: "/brand/vivra-events.png", alt: "Vivra Events", width: 2169, height: 1545 },
-  mosque: { src: "/brand/vivra-mosque.png", alt: "Vivra Mosque", width: 2169, height: 1569 },
+  vivra: { src: "/brand/vivra-technology.png", alt: "Vivra Technology", width: 1233, height: 271 },
+  events: { src: "/brand/vivra-events-logo.png", alt: "Vivra Events", width: 1082, height: 248 },
+  mosque: { src: "/brand/vivra-mosques-wordmark.png", alt: "Vivra Mosque", width: 1061, height: 240 },
 };
 
 export const BRAND_ROUTES: Record<Brand, string> = {

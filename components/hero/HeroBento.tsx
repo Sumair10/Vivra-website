@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { PhoneMock } from "@/components/products/PhoneMock";
-import { IMG } from "@/lib/constants/images";
+import { LoopVideo } from "@/components/media/LoopVideo";
 import { cn } from "@/lib/utils";
 
 const SCRIPTS = [
@@ -37,8 +36,15 @@ export function HeroBento() {
       </div>
 
       {/* C — tall photograph */}
-      <div className="img-treat card relative col-span-2 aspect-[4/3] overflow-hidden !p-0 md:col-span-3 md:row-span-2 md:aspect-auto" style={{ "--img-shade": 0.25 } as React.CSSProperties}>
-        <Image src={IMG.eventsListener.src} alt={IMG.eventsListener.alt} fill sizes="(min-width: 768px) 25vw, 100vw" className="object-cover" priority />
+      <div className="img-treat card relative col-span-2 aspect-[9/16] overflow-hidden !p-0 md:col-span-3 md:row-span-2 md:aspect-auto" style={{ "--img-shade": 0.25 } as React.CSSProperties}>
+        <LoopVideo
+          src="/videos/listener-translation-sound.mp4"
+          webm="/videos/listener-translation-sound.webm"
+          poster="/videos/listener-translation-poster.jpg"
+          label="An attendee at a conference follows the speaker in real time on the Vivra live translation app"
+          className="absolute inset-0 object-[50%_62%]"
+          sound
+        />
         <span className="t-label absolute left-4 top-4 z-[1] text-white/90">Listener / Row 7</span>
       </div>
 
